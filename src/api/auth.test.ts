@@ -50,7 +50,7 @@ describe("getAPIKey", () => {
     const headers: IncomingHttpHeaders = {
       authorization: "ApiKey ",
     };
-    expect(getAPIKey(headers)).toBe("i");
+    expect(getAPIKey(headers)).toBe("");
   });
 
   it("should be case-sensitive about 'ApiKey' prefix", () => {
